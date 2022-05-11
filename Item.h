@@ -4,11 +4,15 @@ class Item {
    private:
       int itemCode;
       float unitPrice;
-      float discount; // out of 100 e.g. discount = 15
+      float discount; 
    public:
-      // 1. Write the Default Constructor
-      // 2. Write the Overloaded Constructor
-      // 3. Write the Destructor
+      // 1 Default Constructor
+      Item();
+      // 2. Overloaded Constructor
+      Item(int icode ,float uprice);
+      // 3. Destructor
+      ~Item();
+
 
       void setDiscount(float punitPrice);
       float getDiscount();
